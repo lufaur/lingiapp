@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lufaur.github.io/lingiapp/sitemap.xml
