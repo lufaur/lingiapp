@@ -1,52 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lingi — Translate Anywhere, Even Offline</title>
-    <meta name="description" content="Lingi is a private, on-device translator for iOS. Download your languages once, then translate forever with no signal, no data, and nothing leaving your device.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="app-icon.png">
-    <meta name="theme-color" content="#1B8A96">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lingi — Translate Anywhere, Even Offline</title>
+<meta name="description" content="Lingi is a private, on-device translator for iOS. Download your languages once, then translate forever with no signal, no data, and nothing leaving your device. Arabic and Hebrew go deeper than any competitor.">
+<link rel="canonical" href="https://lufaur.github.io/lingiapp/">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#1B8A96">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lingi">
+<meta property="og:title" content="Lingi — Translate Anywhere, Even Offline">
+<meta property="og:description" content="A private, on-device translator for iOS. Download your languages once, then translate forever — no signal, no data, nothing leaving your device.">
+<meta property="og:url" content="https://lufaur.github.io/lingiapp/">
+<meta property="og:image" content="https://lufaur.github.io/lingiapp/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lingi — Translate Anywhere, Even Offline">
+<meta name="twitter:description" content="A private, on-device translator for iOS. No signal, no data, nothing leaving your device.">
+<meta name="twitter:image" content="https://lufaur.github.io/lingiapp/assets/og-image.jpg">
+
+<!-- hreflang: this site currently ships English only; the app's 13 UI locales are a planned follow-up (see README) -->
+<link rel="alternate" hreflang="x-default" href="https://lufaur.github.io/lingiapp/">
+<link rel="alternate" hreflang="en" href="https://lufaur.github.io/lingiapp/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Lingi",
+  "operatingSystem": "iOS",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "A private, on-device translator for iOS. Download your languages once, then translate forever with no signal, no data, and nothing leaving your device.",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Lingi Pro (Annual)",
+      "price": "14.99",
+      "priceCurrency": "USD",
+      "category": "subscription"
+    },
+    {
+      "@type": "Offer",
+      "name": "Lingi Pro (Lifetime)",
+      "price": "39.99",
+      "priceCurrency": "USD",
+      "category": "one-time purchase"
+    }
+  ]
+}
+</script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="app-icon.png" alt="Lingi" class="logo">
-            <h1>Lingi</h1>
-            <p class="subtitle">Translate anywhere. Even offline.</p>
-        </header>
 
-        <main>
-            <h2>What Lingi does</h2>
-            <p>Lingi translates dozens of languages entirely on your device using Apple's Translation framework. Download a language pair once, then translate with zero signal and zero data — nothing you type or scan ever leaves your iPhone.</p>
-
-            <h2>Arabic &amp; Hebrew, done properly</h2>
-            <p>Beyond general offline translation, Lingi goes deeper for Arabic and Hebrew: a built-in offline dictionary, offline camera translation, Arabic diacritics and root/verb reference, Arabizi input, and native on-device pronunciation.</p>
-
-            <h2>Built the private way</h2>
-            <p>No account, no ads, no analytics SDKs, no tracking. Your translations, saved phrases, and preferences stay on your device — see the <a href="privacy.html">Privacy Policy</a> for the full picture.</p>
-
-            <div class="pill-row">
-                <span class="pill">🔒 On-device</span>
-                <span class="pill">✈️ Works offline</span>
-                <span class="pill">🚫 No ads</span>
-                <span class="pill">🚫 No tracking</span>
-            </div>
-
-            <div class="hero-actions">
-                <span class="badge-soon">Coming soon to the App Store</span>
-            </div>
-        </main>
-
-        <footer>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms</a>
-            </nav>
-            <p>&copy; 2026 Lingi. All rights reserved.</p>
-        </footer>
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a href="index.html" class="brand">
+      <img src="app-icon.png" alt="Lingi" class="brand-mark">
+      <span>Lingi</span>
+    </a>
+    <div class="site-nav-links">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#pricing">Pricing</a>
+      <a href="privacy.html">Privacy</a>
     </div>
+  </div>
+</nav>
+
+<header class="hero-section">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>Translate anywhere.<br>Even offline.</h1>
+      <p class="hero-lede">Download your languages once. Translate forever — no signal, no data, nothing leaving your device.</p>
+      <div class="hero-cta-row">
+        <span class="badge-soon">Coming soon to the App Store</span>
+      </div>
+      <div class="trust-chip-row">
+        <span class="pill">🔒 On-device</span>
+        <span class="pill">✈️ Works offline</span>
+        <span class="pill">🚫 No ads</span>
+        <span class="pill">🚫 No tracking</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/hero-translate.png" alt="Lingi's Translate screen showing an English-to-Arabic translation of the word &quot;water,&quot; with a dictionary lookup popover and quick links to Camera Translate, Conversation Mode, and Currency." class="hero-device-img">
+    </div>
+  </div>
+</header>
+
+<section class="signature-band">
+  <div class="wide-container signature-inner">
+    <div class="signature-icon" aria-hidden="true">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+    </div>
+    <div>
+      <h2>Arabic &amp; Hebrew, done properly</h2>
+      <p>Most translator apps bolt on RTL support as an afterthought. Lingi builds Arabic and Hebrew in from the start: a built-in offline dictionary, offline camera translation, Arabic diacritics and root/verb reference, Arabizi input, and native on-device pronunciation — alongside dozens of other languages, all fully offline.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="wide-container">
+    <h2 class="section-title">Everything you need, none of your data</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">🌐</div>
+        <h3>Offline translation</h3>
+        <p>Download a language pair once, then translate with zero connection — every word stays on your device.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">📷</div>
+        <h3>Camera Translate</h3>
+        <p>Point your camera at a menu, sign, or document and read it in your language — recognized and translated on-device.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">🗣️</div>
+        <h3>Conversation Mode</h3>
+        <p>Hold a real face-to-face conversation across languages — hand the phone back and forth, each side speaks and hears their own language.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">📖</div>
+        <h3>Phrasebook &amp; dictionary</h3>
+        <p>A built-in Arabic↔English dictionary and a personal phrasebook for the words and phrases you save on the go.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">💱</div>
+        <h3>Currency converter</h3>
+        <p>Quick, live exchange rates while traveling — the one feature that briefly uses the internet, and only for currency codes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">🔒</div>
+        <h3>Private by design</h3>
+        <p>No account, no ads, no analytics SDKs. Your translations and saved phrases never leave your device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screenshots" class="section section-dim">
+  <div class="wide-container">
+    <h2 class="section-title">A closer look</h2>
+    <div class="gallery">
+      <figure class="gallery-item">
+        <img src="assets/device-conversation.png" alt="Lingi's Conversation Mode screen, showing a split face-to-face layout with a mic button on each side, ready for a two-way spoken conversation.">
+        <figcaption>Conversation Mode — hand the phone back and forth, each side speaks and hears their own language.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="assets/gulfdialect-card.png" alt="Lingi's Gulf Arabic phrase reference sheet, showing common phrases in Arabic script, transliteration, and English translation.">
+        <figcaption>Gulf Arabic reference — real dialect phrases, transliteration, and meaning, all bundled offline.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section trust-section">
+  <div class="wide-container">
+    <h2 class="section-title">Why trust Lingi with your words</h2>
+    <p class="trust-lede">Lingi hasn't launched yet, so there are no ratings to show you — here's what we can show you instead.</p>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <h3>Built by one developer</h3>
+        <p>Lingi is an independent app, built because offline-first translation with real Arabic and Hebrew depth didn't exist yet. No investors, no growth targets — just a tool meant to work when you need it, signal or not.</p>
+      </div>
+      <div class="trust-card">
+        <h3>Privacy as architecture</h3>
+        <p>On-device translation isn't a checkbox here — it's the whole design. No iCloud sync, no server, no third-party analytics. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+      <div class="trust-card">
+        <h3>Built for accessibility</h3>
+        <p>VoiceOver labels, Dynamic Type, and reduced-motion support are treated as first-class requirements throughout the app, not an afterthought.</p>
+      </div>
+      <div class="trust-card">
+        <h3>13 languages, real localization</h3>
+        <p>Lingi's own interface ships in English, Arabic, German, Spanish, French, Hebrew, Italian, Japanese, Korean, Portuguese, Russian, and both Simplified and Traditional Chinese.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section section-dim">
+  <div class="wide-container">
+    <h2 class="section-title">Simple, honest pricing</h2>
+    <p class="trust-lede">One Pro tier. Two ways to pay for it.</p>
+    <div class="price-cards">
+      <div class="price-card">
+        <h3>Annual</h3>
+        <p class="price-amount">$14.99<span>/year</span></p>
+        <p class="price-detail">Starts with a 7-day free trial. Cancel anytime before it ends and you won't be charged.</p>
+      </div>
+      <div class="price-card price-card-featured">
+        <h3>Lifetime</h3>
+        <p class="price-amount">$39.99<span> once</span></p>
+        <p class="price-detail">Pay once, own it forever. No renewal, no trial, no subscription.</p>
+      </div>
+    </div>
+    <p class="price-footnote">Both plans unlock every supported language pair. Billed and managed entirely through your Apple ID — Lingi never sees your payment details.</p>
+  </div>
+</section>
+
+<section class="section faq-section">
+  <div class="wide-container">
+    <h2 class="section-title">Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Does Lingi really work with no internet connection?</summary>
+        <p>Yes, for every downloaded language pair. Translation, camera scanning, Conversation Mode, and the dictionary all run entirely on your device using Apple's Translation framework. The only feature that briefly uses the internet is the optional Currency Converter.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is my data private?</summary>
+        <p>Everything you translate, save, or scan stays on your device — nothing syncs to iCloud or any server. See the full <a href="privacy.html">Privacy Policy</a> for details.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which languages does Lingi support?</summary>
+        <p>Lingi covers the broad set of languages Apple's on-device Translation framework supports, with extra depth for Arabic and Hebrew — a bundled dictionary, offline camera translation, diacritics, and root/verb reference.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between the annual and lifetime plans?</summary>
+        <p>Both unlock the same features. Annual is $14.99/year with a 7-day free trial and auto-renews unless canceled. Lifetime is a one-time $39.99 payment with no renewal, ever.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wide-container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <p>&copy; 2026 Lingi. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
